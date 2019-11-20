@@ -1,11 +1,11 @@
 " Plugins
-call plug#begin('~/.vim/plugged')
-
-Plug 'dracula/vim', { 'as': 'dracula' }
-
+call plug#begin('~/.vim/plugged') 
+Plug 'dracula/vim', { 'as': 'dracula' } 
 " Initialize plugin system
 call plug#end()
 
+" Make CTRL+C copy to system clipboard on Linux
+vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
 
 syntax on
 set visualbell
@@ -38,6 +38,10 @@ set ruler
 
 "fold at indents
 "set fdm=indent
+
+" the following line prevents forcing # to be inserted in column 1
+" If you use compatible, then ensure < is not in cpoptions: cpoptions-=<
+inoremap # X<BS>#
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Set up tab completion in insert mode
