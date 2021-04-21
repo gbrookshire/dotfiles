@@ -4,6 +4,28 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 " Initialize plugin system
 call plug#end()
 
+" Pathogen 
+execute pathogen#infect()
+
+" syntastic linter
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1 " or 0?
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers=['flake8', 'python3']
+let g:syntastic_loc_list_height = 5
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_warning_symbol = '⚠️'
+let g:syntastic_style_warning_symbol = '💩'
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
+
 " Make CTRL+C copy to system clipboard on Linux
 vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
 
@@ -93,3 +115,9 @@ set guioptions-=r  "scrollbar
 
 """"" Include a left margin
 set foldcolumn=2
+
+
+"""""""""""""""""""""""
+" Autocommand section "
+"""""""""""""""""""""""
+"autocmd FileType python compiler pylint
