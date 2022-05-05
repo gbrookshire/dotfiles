@@ -14,6 +14,9 @@ Plug 'vim-syntastic/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Iceberg color scheme
+Plug 'cocopon/iceberg.vim'
+
 " " autocompletion for python
 " Plug 'davidhalter/jedi-vim'
 
