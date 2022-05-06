@@ -1,6 +1,9 @@
 " Plugins
 call plug#begin('~/.vim/plugged')
 
+" Iceberg color scheme
+Plug 'cocopon/iceberg.vim'
+
 " Comments
 Plug 'preservim/nerdcommenter'
 
@@ -10,12 +13,12 @@ Plug 'tpope/vim-fugitive'
 " Syntastic
 Plug 'vim-syntastic/syntastic'
 
+" Git markers in the side column
+Plug 'airblade/vim-gitgutter'
+
 " info bar at the bottom
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-" Iceberg color scheme
-Plug 'cocopon/iceberg.vim'
 
 " " autocompletion for python
 " Plug 'davidhalter/jedi-vim'
@@ -64,6 +67,11 @@ highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
 
+" Gitgutter settings
+" Go to the next/previous hunk using <bracket>+h
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
+
 " NerdCommenter settings
 " Comment a line in/out with \-c-<space>
 filetype plugin on
@@ -91,7 +99,6 @@ let g:jedi#use_tabs_not_buffers = 1
 set mouse=a
 syntax on
 colorscheme iceberg
-set guifont=Jetbrains\ Mono:h12
 set visualbell
 set showmatch "show matching brackets
 " make that backspace key work the way it should
