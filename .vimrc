@@ -101,6 +101,7 @@ syntax on
 colorscheme iceberg
 set visualbell
 set showmatch "show matching brackets
+hi MatchParen cterm=bold ctermbg=19 ctermfg=212 guibg=#bec0c9 guifg=#33374c
 " make that backspace key work the way it should
 set backspace=indent,eol,start
 "highlight search terms
