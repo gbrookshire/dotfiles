@@ -95,6 +95,15 @@ let g:airline_theme='tomorrow'
 " jedi-vim settings
 let g:jedi#use_tabs_not_buffers = 1
 
+" yank to system clipboard
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
+
 " General settings
 set mouse=a
 syntax on
