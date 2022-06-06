@@ -113,9 +113,6 @@ set incsearch
 " searching in uppercase is case-sensitive, while in lowercase isn't
 set smartcase
 
-" "just show a summary in the bottom R corner
-" set ruler
-
 " the following line prevents forcing # to be inserted in column 1
 " If you use compatible, then ensure < is not in cpoptions: cpoptions-=<
 inoremap # X<BS>#
