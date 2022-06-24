@@ -23,6 +23,10 @@ Plug 'vim-airline/vim-airline-themes'
 " Surround something with parens, brackets, quotes, etc
 Plug 'tpope/vim-surround'
 
+" Fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " " autocompletion for python
 " Plug 'davidhalter/jedi-vim'
 
