@@ -20,6 +20,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Surround something with parens, brackets, quotes, etc
+Plug 'tpope/vim-surround'
+
 " " autocompletion for python
 " Plug 'davidhalter/jedi-vim'
 
