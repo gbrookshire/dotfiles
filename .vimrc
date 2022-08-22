@@ -1,6 +1,9 @@
 " Plugins
 call plug#begin('~/.vim/plugged')
 
+" Integrated testing with Pytest
+Plug 'alfredodeza/pytest.vim'
+
 " Better python syntax highlighting
 Plug 'vim-python/python-syntax'
 
