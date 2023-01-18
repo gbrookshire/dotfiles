@@ -44,6 +44,9 @@ Plug 'junegunn/fzf.vim'
 " " " further plugin for autocompletion
 " " Plug 'deoplete-plugins/deoplete-jedi'
 
+" Git blame
+Plug 'APZelos/blamer.nvim'
+
 " Initialize plugin system
 call plug#end()
 
