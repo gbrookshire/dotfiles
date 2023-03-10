@@ -47,6 +47,9 @@ Plug 'junegunn/fzf.vim'
 " Git blame
 Plug 'APZelos/blamer.nvim'
 
+" Automatic docstring template with :Pydocstring
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
+
 " Initialize plugin system
 call plug#end()
 
@@ -115,6 +118,8 @@ endif
 
 " Improved python syntax highlighting with vim-python/python-syntax
 let g:python_highlight_all = 1
+
+let g:pydocstring_formatter = 'numpy'
 
 " General settings
 set mouse=a
