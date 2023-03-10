@@ -50,6 +50,9 @@ Plug 'APZelos/blamer.nvim'
 " Automatic docstring template with :Pydocstring
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 
+" Diff two ranges of lines
+Plug 'AndrewRadev/linediff.vim'
+
 " Initialize plugin system
 call plug#end()
 
