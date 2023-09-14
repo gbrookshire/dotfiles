@@ -185,6 +185,7 @@ set shiftwidth=4
 set shiftround
 set nojoinspaces
 set fileformat=unix
+set textwidth=100
 
 
 """""""""""""
